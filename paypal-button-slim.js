@@ -1,22 +1,14 @@
 console.log("PaypalDonateButton initialization");
-if (window.jQuery) {
-	//jQuery is loaded:
-	var jquery_version = jQuery.fn.jquery || jQuery().jquery;
-	console.log("Jquery loaded, version: ", jquery_version);
-	if (jquery_version < "3.3.1") {
-		throw new Error("This version of jquery is not supported for this script, use jquery 3.3.1 or greater, or use a different donatebutton script here: https://oxmc.xyz/project/paypal-donatebutton");
-	};
 
-	//dynamically add button css:
-	var stylesheet = $("<link>", {
-		rel: "stylesheet",
-		type: "text/css",
-		href: "http://php.bracketproto.com/embed/paypal.css"
-	});
-	stylesheet.appendTo("head");
-} else {
-  throw new Error("jQuery not loaded, this script requires jquery 3.3.1 or greater, or use a different donatebutton script here: https://oxmc.xyz/project/paypal-donatebutton");
-};
+var btncssbase64 = "";
+
+//dynamically add button css:
+var stylesheet = document.createElement("link");
+stylesheet.rel = "stylesheet";
+stylesheet.type = "text/css";
+stylesheet.href = btncssbase64;
+		
+stylesheet.appendTo("head");
 
 const PaypalDonateButton = {
 	// Get url variables:
