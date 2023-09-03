@@ -1,51 +1,10 @@
-/* Default button css:*/
-.btn-db {
-  /*Add new css:*/
-  font-size: 14px !important;
-  padding: 6px 12px !important;
-  margin-bottom: 0 !important;
-
-  background-color: 253B80 !important;
-  border: none !important;
-  color: white !important;
-  text-align: center !important;
-  text-decoration: none !important;
-  display: inline-block !important;
-  margin: 4px 2px !important;
-  cursor: pointer !important;
-}
-
-.btn-db:hover {
-  background-color: 252c80 !important;
-}
-
-.btn-db:active {
-  background-color: 1f256c !important;
-  /*box-shadow: 0 2px #666;
-  transform: translateY(1px);*/
-}
-
-.btn-db.rb-2 {
-  border-radius: 2px !important;
-}
-
-.btn-db.rb-4 {
-  border-radius: 4px !important;
-}
-
-.btn-db.icon {
-  width: 25px !important;
-  height: 25px !important;
-}
-
-/*Button css for bootstrap:*/
+/* Common button styles (both non-Bootstrap and Bootstrap): */
+.btn-db,
 .btn-bsdb {
-  /*Add new css:*/
   font-size: 14px !important;
   padding: 6px 12px !important;
   margin-bottom: 0 !important;
-
-  background-color: 253B80 !important;
+  background-color: #253B80 !important;
   border: none !important;
   color: white !important;
   text-align: center !important;
@@ -53,26 +12,35 @@
   display: inline-block !important;
   margin: 4px 2px !important;
   cursor: pointer !important;
+  border-radius: 4px !important;
+  -webkit-border-radius: 4px !important;
+  -moz-border-radius: 4px !important;
 }
 
-.btn-bsdb:hover {
-  background-color: 252c80 !important;
-}
-
+.btn-db:hover,
+.btn-bsdb:hover,
+.btn-db:active,
 .btn-bsdb:active {
-  background-color: 1f256c !important;
-  /*box-shadow: 0 2px #666;
-  transform: translateY(1px);*/
+  background-color: #252C80 !important;
 }
 
+/* Specific border-radius classes */
+.btn-db.rb-2,
 .btn-bsdb.rb-2 {
   border-radius: 2px !important;
+  -webkit-border-radius: 2px !important;
+  -moz-border-radius: 2px !important;
 }
 
+.btn-db.rb-4,
 .btn-bsdb.rb-4 {
   border-radius: 4px !important;
+  -webkit-border-radius: 4px !important;
+  -moz-border-radius: 4px !important;
 }
 
+/* Icon size classes */
+.btn-db.icon,
 .btn-bsdb.icon {
   width: 25px !important;
   height: 25px !important;
