@@ -16,7 +16,7 @@ if (window.jQuery) {
 	var stylesheet = $("<link>", {
 		rel: "stylesheet",
 		type: "text/css",
-		href: "http://php.bracketproto.com/embed/paypal.css"
+		href: "https://github.com/oxmc/paypaldonatebutton/blob/main/paypal.css?raw=true"
 	});
 	stylesheet.appendTo("head");
 } else {
