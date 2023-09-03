@@ -1,3 +1,8 @@
+/**
+ * This script dynamically generates a PayPal donation button for your website.
+ * Copyright oxmc. <https://oxmc.is-a.dev/>
+ * Licensed under the GNU General Public License v3.0.
+ */
 console.log("PaypalDonateButton initialization");
 if (window.jQuery) {
 	//jQuery is loaded:
