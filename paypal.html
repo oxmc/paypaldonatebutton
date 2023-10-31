@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Donate Page</title>
   <!--<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>-->
+  <link rel="stylesheet" href="./paypal.css">
 </head>
 <body>
   <h2>Default Donate button, which is actually an image:</h2>
   <form action="https://www.paypal.com/donate" method="post" target="_top">
-    <input type="hidden" name="business" value="ZCZARMZD59UKQ" />
+    <input type="hidden" name="business" value="MQ8P2E8953BRL" />
     <input type="hidden" name="no_recurring" value="0" />
     <input type="hidden" name="currency_code" value="USD" />
     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
@@ -19,7 +20,7 @@
   <h2>Donate button with the API:</h2>
   <div id="donate_btn"></div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="application/javascript"></script>
-  <script src="https://github.com/oxmc/paypaldonatebutton/blob/main/paypal-button-jquery.js?raw=true" type="application/javascript"></script>
+  <script src="./paypal-button-jquery.js" type="application/javascript"></script>
   <button onClick="PaypalDonateButton.create('donate_btn');">Create button</button>
   <script>
     // You can also auto create the button once the page has loaded:

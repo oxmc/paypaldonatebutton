@@ -1,8 +1,8 @@
 /* Common button styles (both non-Bootstrap and Bootstrap): */
 .btn-db,
 .btn-bsdb {
-  font-size: 14px !important;
-  padding: 6px 12px !important;
+  font-size: 11px !important;
+  padding: 0px 7px !important;
   margin-bottom: 0 !important;
   background-color: #253B80 !important;
   border: none !important;
@@ -24,6 +24,19 @@
   background-color: #252C80 !important;
 }
 
+/* Button sizes */
+.btn-db.lg,
+.btn-bsdb.lg {
+  font-size: 14px !important;
+  padding: 6px 12px !important;
+}
+
+.btn-db.sm,
+.btn-bsdb.sm {
+  font-size: 11px !important;
+  padding: 0px 7px !important;
+}
+
 /* Specific border-radius classes */
 .btn-db.rb-2,
 .btn-bsdb.rb-2 {
@@ -39,9 +52,66 @@
   -moz-border-radius: 4px !important;
 }
 
+.btn-db.rb-8,
+.btn-bsdb.rb-8 {
+  border-radius: 8px !important;
+  -webkit-border-radius: 8px !important;
+  -moz-border-radius: 8px !important;
+}
+
+/* Donate-text size classes */
+.btn-db .donate-text,
+.btn-bsdb .donate-text {
+  font-size: 20px !important;
+  margin-left: 10px !important;
+  margin-top: 17px !important;
+  margin-bottom: 17px !important;
+  float: right !important;
+}
+
+.btn-db.sm .donate-text,
+.btn-bsdb.sm .donate-text {
+  font-size: 16px !important;
+  margin-left: 10px !important;
+  margin-top: 13px !important;
+  margin-bottom: 10px !important;
+  float: right !important;
+}
+
+.btn-db.lg .donate-text,
+.btn-bsdb.lg .donate-text {
+  font-size: 24px !important;
+  margin-left: 10px !important;
+  margin-top: 26px !important;
+  margin-bottom: 26px !important;
+  float: right !important;
+}
+
+/* Icon wrapper */
+.btn-db .icon-wrapper,
+.btn-bsdb .icon-wrapper {
+  float: left !important;
+}
+
 /* Icon size classes */
-.btn-db.icon,
-.btn-bsdb.icon {
+.btn-db .icon-wrapper .icon,
+.btn-bsdb .icon-wrapper .icon {
+  width: 35px !important;
+  height: 35px !important;
+}
+
+.btn-bsdb .icon-wrapper .icon {
+  margin-top: 14px;
+}
+
+.btn-db.sm .icon-wrapper .icon,
+.btn-bsdb.sm .icon-wrapper .icon {
   width: 25px !important;
   height: 25px !important;
+}
+
+.btn-db.lg .icon-wrapper .icon,
+.btn-bsdb.lg .icon-wrapper .icon {
+  width: 45px !important;
+  height: 45px !important;
 }
