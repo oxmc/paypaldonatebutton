@@ -9,7 +9,7 @@ if (window.jQuery) {
     var jquery_version = jQuery.fn.jquery || jQuery().jquery;
     console.log("Jquery loaded, version: ", jquery_version);
     if (jquery_version < "3.3.1") {
-        throw new Error("This version of jquery is not supported for this script, use jquery 3.3.1 or greater, or use a different donatebutton script here: https://oxmc.is-a.dev/link.html?id=ppdb");
+        console.warn("This version of jquery is not tested for this script, if you experience errors use jquery 3.3.1 or greater, or use a different donatebutton script here: https://oxmc.is-a.dev/link.html?id=ppdb");
     };
 
     //dynamically add button css:
